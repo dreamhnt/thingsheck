@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <intro/>
+    <layout/>
   </div>
 </template>
 
 <script>
-import Intro from './components/Intro'
+import Layout from './components/Layout'
 export default {
   name: 'App',
-  components: {Intro}
+  components: {Layout}
 }
 </script>
 

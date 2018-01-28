@@ -23,8 +23,6 @@ export default {
     login () {
       auth.onAuthStateChanged(user => {
         if (user) {
-          console.log(user)
-          console.log(router)
           router.push('home')
         } else {
           auth.signInWithPopup(provider)

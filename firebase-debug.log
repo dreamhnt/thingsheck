@@ -1,0 +1,32 @@
+[debug] [2018-01-28T14:38:31.546Z] ----------------------------------------------------------------------
+[debug] [2018-01-28T14:38:31.547Z] Command:       /Users/dreamhnt/.nvm/versions/node/v8.9.4/bin/node /Users/dreamhnt/.nvm/versions/node/v8.9.4/bin/firebase serve
+[debug] [2018-01-28T14:38:31.547Z] CLI Version:   3.17.4
+[debug] [2018-01-28T14:38:31.547Z] Platform:      darwin
+[debug] [2018-01-28T14:38:31.547Z] Node Version:  v8.9.4
+[debug] [2018-01-28T14:38:31.548Z] Time:          Sun Jan 28 2018 23:38:31 GMT+0900 (KST)
+[debug] [2018-01-28T14:38:31.548Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-28T14:38:31.558Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-28T14:38:31.558Z] > authorizing via signed-in user
+[debug] [2018-01-28T14:38:31.560Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/dreamhnt  
+  
+ Sun Jan 28 2018 23:38:31 GMT+0900 (KST)
+[debug] [2018-01-28T14:38:32.316Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-28T14:38:32.316Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/dreamhnt/tokens  
+  
+ Sun Jan 28 2018 23:38:32 GMT+0900 (KST)
+[debug] [2018-01-28T14:38:32.989Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/dreamhnt/workspace/thingsheck'...
+[info] 
+[debug] [2018-01-28T14:38:32.991Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/dreamhnt  
+  
+ Sun Jan 28 2018 23:38:32 GMT+0900 (KST)
+[debug] [2018-01-28T14:38:33.891Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-28T14:38:33.892Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/208204891871/clients/_:getWebAppConfig  
+  
+ Sun Jan 28 2018 23:38:33 GMT+0900 (KST)
+[debug] [2018-01-28T14:38:34.659Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: dist
+[info] ✔  hosting: Local server: http://localhost:5000
+
