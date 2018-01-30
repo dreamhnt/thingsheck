@@ -13,8 +13,9 @@ const config = {
   storageBucket: 'dreamhnt.appspot.com',
   messagingSenderId: '208204891871'
 }
+firebase.initializeApp(config)
+
 const state = {
-  firebase: firebase.initializeApp(config),
   isAuth: false,
   userInfo: null
 }
