@@ -8,22 +8,22 @@
 
 <script>
 import router from '../router'
-const firebase = window.firebase
-const provider = new firebase.auth.GoogleAuthProvider()
-const auth = firebase.auth()
 
 export default {
   name: 'Intro',
   data () {
     return {
-      user: ''
     }
   },
   methods: {
     login () {
+      const firebase = this.$store.state.firebase
+      const auth = firebase.auth()
+      const provider = new firebase.auth.GoogleAuthProvider()
       auth.onAuthStateChanged(user => {
         if (user) {
-          router.push('home')
+          this.$store.commit('changeAuth', true)
+          router.push('FoodMap')
         } else {
           auth.signInWithPopup(provider)
         }

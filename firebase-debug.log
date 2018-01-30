@@ -30,3 +30,44 @@
 [info] i  hosting: Serving hosting files from: dist
 [info] ✔  hosting: Local server: http://localhost:5000
 
+[debug] [2018-01-30T13:15:41.606Z] ----------------------------------------------------------------------
+[debug] [2018-01-30T13:15:41.608Z] Command:       /Users/dreamhnt/.nvm/versions/node/v8.9.4/bin/node /Users/dreamhnt/.nvm/versions/node/v8.9.4/bin/firebase serve
+[debug] [2018-01-30T13:15:41.608Z] CLI Version:   3.17.4
+[debug] [2018-01-30T13:15:41.608Z] Platform:      darwin
+[debug] [2018-01-30T13:15:41.608Z] Node Version:  v8.9.4
+[debug] [2018-01-30T13:15:41.608Z] Time:          Tue Jan 30 2018 22:15:41 GMT+0900 (KST)
+[debug] [2018-01-30T13:15:41.609Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-30T13:15:41.622Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-30T13:15:41.622Z] > authorizing via signed-in user
+[debug] [2018-01-30T13:15:41.623Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-30T13:15:41.623Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/UEj-NKYBDPLXYHrBbIgJZ80dWXN70MAlYLVrVHebwmc',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Jan 30 2018 22:15:41 GMT+0900 (KST)
+[debug] [2018-01-30T13:15:41.929Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-30T13:15:41.943Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/dreamhnt  
+  
+ Tue Jan 30 2018 22:15:41 GMT+0900 (KST)
+[debug] [2018-01-30T13:15:42.898Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-30T13:15:42.899Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/dreamhnt/tokens  
+  
+ Tue Jan 30 2018 22:15:42 GMT+0900 (KST)
+[debug] [2018-01-30T13:15:43.631Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/dreamhnt/workspace/thingsheck'...
+[info] 
+[debug] [2018-01-30T13:15:43.633Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/dreamhnt  
+  
+ Tue Jan 30 2018 22:15:43 GMT+0900 (KST)
+[debug] [2018-01-30T13:15:44.602Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-30T13:15:44.602Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/208204891871/clients/_:getWebAppConfig  
+  
+ Tue Jan 30 2018 22:15:44 GMT+0900 (KST)
+[debug] [2018-01-30T13:15:45.499Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] ✔  hosting: Local server: http://localhost:5000
+
