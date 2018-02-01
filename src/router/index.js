@@ -3,25 +3,29 @@ import Router from 'vue-router'
 import Store from '../store'
 import Intro from '@/components/Intro'
 import FoodMap from '@/components/FoodMap'
+import Layout from '@/components/Layout'
 
 Vue.use(Router)
 
 const router = new Router({
   routes: [
     {
+      path: '/nadi',
+      component: Layout,
+      name: 'nadi',
+      children: [
+        {
+          path: 'foodmap',
+          name: 'foodmap',
+          component: FoodMap,
+          meta: { requiresAuth: true }
+        }
+      ]
+    },
+    {
       path: '/',
-      redirect: '/intro'
-    },
-    {
-      path: '/foodmap',
-      name: 'FoodMap',
-      component: FoodMap,
-      meta: { requiresAuth: true }
-    },
-    {
-      path: '/intro',
-      name: 'Intro',
-      component: Intro
+      name: 'intro',
+      components: {intro: Intro}
     },
     {
       path: '*',
