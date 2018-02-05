@@ -1,5 +1,8 @@
 <template>
-  <div id="food-map"></div>
+  <div class="wrap">
+    <div id="food-map"></div>
+    <el-button class="add-btn" round>추가</el-button>
+  </div>
 </template>
 
 <script>
@@ -108,11 +111,16 @@ export default {
 <style>
 .wrap {
   height: 100%;
-  height: calc(100% - 110px);
-  height: -webkit-calc(100% - 110px);
 }
 #food-map {
   width: 100%;
   height: 100%;
+}
+.add-btn {
+  position: absolute;
+  overflow: hidden;
+  top: 100px;
+  right: 40px;
+  z-index: 1;
 }
 </style>

@@ -9,7 +9,7 @@
       width="30%">
       <el-input v-model.trim="nickname" placeholder="닉네임"></el-input>
       <span slot="footer" class="dialog-footer">
-        <el-button @click="cancel">취소</el-button>
+        <el-button @click="dialogVisible = false">취소</el-button>
         <el-button type="primary" @click="userInfoSave">확인</el-button>
       </span>
     </el-dialog>
@@ -27,6 +27,14 @@ export default {
       dialogVisible: false,
       userInfo: null,
       nickname: ''
+    }
+  },
+  watch: {
+    dialogVisible (val) {
+      if (!val) {
+        this.userInfo.delete()
+        this.dialogVisible = false
+      }
     }
   },
   methods: {
@@ -58,10 +66,6 @@ export default {
       } else {
         this.$message.error('닉네임을 입력해주세요.')
       }
-    },
-    cancel () {
-      this.userInfo.delete()
-      this.dialogVisible = false
     }
   }
 }
